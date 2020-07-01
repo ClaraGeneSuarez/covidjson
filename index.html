@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+
+		<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+
+	</head>
+
+	<body>
+	
+		<script>
+		
+			function testJSON() {
+				var daticovid = $.getJSON("https://raw.githubusercontent.com/ClaraGeneSuarez/covidjson/master/covid.json");
+				return daticovid;
+			}
+			  
+			$.when(testJSON()).then(function(jsondata){
+				
+				var daticovid = jasondata;
+				console.log(daticovid);
+				
+			});
+			
+		</script>
+	
+	</body>
+
+</html>
